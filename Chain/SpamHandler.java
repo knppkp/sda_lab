@@ -1,5 +1,6 @@
 
 public class SpamHandler extends Handler {
+    @Override
     public void handleRequest(String request) {
         if (AIDetector.isSpam(request)) {
             System.out.println("Spam email Handled");
