@@ -7,8 +7,6 @@ public class ComplaintHandler extends Handler {
         }
         if (successor != null) {
             successor.handleRequest(request);
-            return;
         }
-        System.out.println(request + " Email unhandled");
     }
 }
